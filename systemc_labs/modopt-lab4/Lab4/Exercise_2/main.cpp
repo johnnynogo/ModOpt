@@ -1,4 +1,4 @@
-#define ABSTRACT_TIMER
+//#define ABSTRACT_TIMER
 
 #include <systemc.h>
 #include "tlc.h"

@@ -24,7 +24,7 @@ int sc_main (int argc, char * argv[])
 	TLC.timer(hw_drivers);
 
 	TB.Main_road(M);
-	TB.Secondary_road(S) ;
+	TB.Secondary_road(S);
 	TB.car(car);
 
 	sc_start();
