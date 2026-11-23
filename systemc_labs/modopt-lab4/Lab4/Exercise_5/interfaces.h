@@ -1,13 +1,23 @@
 #ifndef INTERFACE_H
 #define INTERFACE_H
-struct light_if: virtual public sc_interface {
+
+enum color {RED, YELLOW, GREEN };
+
+struct light_if : virtual public sc_interface {
     virtual void set_main(color)=0; 
     virtual void set_sec(color)=0;
 };
+
 struct timer_if : virtual public sc_interface {
     virtual void wait_for_sec(unsigned int)=0;
 };
-struct car_if: virtual public sc_interface {
+
+struct car_if : virtual public sc_interface {
     virtual void wait_for_car()=0;
+};
+
+struct bus_if : virtual public sc_interface {
+    virtual void write(sc_int<32> addr, sc_int<32> data)=0;
+    virtual sc_int<32> read(sc_int<32> addr)=0;
 };
 #endif
