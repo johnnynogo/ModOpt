@@ -12,14 +12,13 @@ SC_MODULE(TIMER_PERIPHERAL), public bus_if {
 
 
     SC_CTOR(TIMER_PERIPHERAL) : clk("clk") {
+        counter = 0;
+        max_value = 0;
+        control = 0;
         SC_THREAD(counting_thread);
     }
 
     void counting_thread() {
-        counter = 0;
-        max_value = 0;
-        control = 0;
-        
         while(1) {
             wait(start_ev);
             while(counter < max_value) {

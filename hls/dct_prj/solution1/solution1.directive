@@ -1,0 +1,31 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+    <sourceFile name="">
+        <directive functionName="dct" label="" functionLabel="">
+            <pragma name="TOP">
+                <option name="name" value="dct"/>
+            </pragma>
+        </directive>
+        <directive functionName="dct_2d" label="" functionLabel="">
+            <pragma name="ARRAY_PARTITION">
+                <option name="cyclic" value="" positionalBoolean="type"/>
+                <option name="dim" value="1"/>
+                <option name="factor" value="8"/>
+                <option name="variable" positionalBoolean="4" value="col_inbuf"/>
+            </pragma>
+        </directive>
+        <directive functionName="dct" label="" functionLabel="">
+            <pragma name="ARRAY_PARTITION">
+                <option name="cyclic" value="" positionalBoolean="type"/>
+                <option name="dim" value="1"/>
+                <option name="factor" value="8"/>
+                <option name="variable" positionalBoolean="4" value="buf_2d_out"/>
+            </pragma>
+        </directive>
+        <directive functionName="dct" label="" functionLabel="">
+            <pragma name="TOP">
+                <option name="name" value="dct"/>
+            </pragma>
+        </directive>
+    </sourceFile>
+</AutoPilot:ProjectResources>
+

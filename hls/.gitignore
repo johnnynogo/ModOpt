@@ -1,0 +1,11 @@
+**/syn/
+**/sim/
+**/csim/
+**/impl/
+**/.autopilot/
+**/.debug/
+.Xil/
+*.log
+*.jou
+.apc/
+.settings/
